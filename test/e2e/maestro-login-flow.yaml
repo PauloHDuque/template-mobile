@@ -1,0 +1,17 @@
+appId: com.template.mobile
+---
+- launchApp
+- assertVisible: "Template Mobile"
+- tapOn:
+    id: "input-email"
+- inputText: "admin@template.com"
+- tapOn:
+    id: "input-password"
+- inputText: "password123"
+- tapOn:
+    id: "button-submit"
+- assertVisible: "Status da Sessão"
+- assertVisible: "Autenticado via Expo SecureStore 🔒"
+- tapOn:
+    id: "button-logout"
+- assertVisible: "Template Mobile"
